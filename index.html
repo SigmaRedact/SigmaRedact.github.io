@@ -21,15 +21,19 @@
       font-size: 1.5rem;
       margin-bottom: 2rem;
     }
-    .fake-button {
+    .real-button {
       padding: 1rem 2rem;
       font-size: 1.2rem;
       background: #444;
       color: white;
       border: none;
       border-radius: 10px;
-      cursor: not-allowed;
-      opacity: 0.6;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .real-button:hover {
+      background: #666;
     }
     .disclaimer {
       margin-top: 3rem;
@@ -41,7 +45,7 @@
 <body>
   <div class="logo">SigmaRedact</div>
   <div class="subtitle">Make Reddit posts more sigma with maximum rizz™</div>
-  <button class="fake-button" disabled>COMING SOON</button>
+  <a href="https://github.com/SigmaRedact/SigmaRedact" class="real-button">View on GitHub</a>
   <div class="disclaimer">*This is a parody site. Not affiliated with Redact.</div>
 </body>
 </html>
